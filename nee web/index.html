@@ -1,0 +1,77 @@
+
+<html>
+  <link rel="stylesheet" href="style.css">  
+<div class="container">
+
+        <title>  Ganga Drishti </title>
+<h1>Available Rooms</h>
+    <div class="rooms">
+    <div class="card">
+    <img src="https://via.placeholder.com/400x200" alt="Room">
+    <h3>Deluxe Room</h3>
+    <p>₹1500 / Night</p>
+    <button onclick="selectRoom('Deluxe Room',1500)">Book Now</button>
+    </div>
+<div class="card">
+<img src="https://via.placeholder.com/400x200" alt="Room">
+<h3>Family Room</h3>
+<p>₹2500 / Night</p>
+<button onclick="selectRoom('Family Room',2500)">Book Now</button>
+</div>
+</div>
+
+
+<div class="booking">
+<h2>Booking Form</h2>
+<form>
+<label>Selected Room</label>
+<input type="text" id="room" readonly>
+
+
+<label>Your Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number" required>
+
+
+<label>Check-in Date</label>
+<input type="date" required>
+
+
+<label>Check-out Date</label>
+<input type="date" required>
+</form>
+</div>
+
+
+<div class="payment">
+<h2>Payment (UPI)</h2>
+<p><strong>Scan QR Code & Pay</strong></p>
+<img src="qr.png" alt="UPI QR Code" style="max-width:250px;display:block;margin:10px 0;">
+<p><strong>UPI ID:</strong> 9580598751@ptyes</p>
+<p><strong>Contact Number:</strong> 9580598751</p>
+<p>Payment karne ke baad screenshot WhatsApp / Call par bheje.</p>
+<button>Confirm Booking</button>
+</div>
+
+
+</div>
+
+
+<footer>
+<p>© 2025 Tourist Booking | Contact: 9580598751</p>
+</footer>
+
+
+<script>
+function selectRoom(name, price){
+document.getElementById('room').value = name + ' - ₹' + price + '/Night';
+window.scrollTo(0, document.body.scrollHeight);
+}
+</script>
+
+
+</body>
+</html>
